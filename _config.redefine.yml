@@ -1,0 +1,340 @@
+title: MosEcho
+subtitle: AI 工程 · 网络安全 · 论文研究
+description: AI 工程师 · 本科在读，有 CTF 比赛和漏洞挖掘经验。
+mosecho_site_start: 2027-09-01T00:00:00+08:00
+author: MosEcho
+language: zh-CN
+timezone: Asia/Shanghai
+root: /
+permalink: read/:title/
+source_dir: source
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+relative_link: false
+future: false
+post_asset_folder: false
+render_drafts: false
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ""
+prismjs:
+  enable: false
+index_generator:
+  path: ""
+  per_page: 8
+  order_by: -date
+per_page: 8
+pagination_dir: page
+external_link:
+  enable: true
+  field: site
+  exclude: []
+url: https://mosecho.github.io
+theme: redefine-preview
+public_dir: dist-redefine
+database: db-redefine.json
+theme_config:
+  info:
+    title: MosEcho
+    subtitle: AI 工程 · 网络安全 · 论文研究
+    author: MosEcho
+    url: https://mosecho.github.io
+  defaults:
+    favicon: /assets/avatar.jpg
+    logo: null
+    avatar: /assets/avatar.jpg
+  colors:
+    primary: "#365c86"
+    secondary: null
+    default_mode: light
+  global:
+    fonts:
+      chinese:
+        enable: false
+        family: null
+        url: null
+      english:
+        enable: false
+        family: null
+        url: null
+      title:
+        enable: false
+        family: null
+        url: null
+    content_max_width: 1000px
+    sidebar_width: 210px
+    hover:
+      shadow: true
+      scale: false
+    scroll_progress:
+      bar: false
+      percentage: true
+    website_counter:
+      url: https://cn.vercount.one/js
+      enable: false
+      site_pv: true
+      site_uv: true
+      post_pv: true
+    single_page: true
+    preloader:
+      enable: false
+      custom_message: null
+    side_tools:
+      gear_rotation: true
+      auto_expand: false
+    open_graph:
+      enable: true
+      image: /images/wallhaven-wqery6-light.webp
+      description: AI 工程师 · 本科在读，有 CTF 比赛和漏洞挖掘经验。
+    google_analytics:
+      enable: false
+      id: null
+  fontawesome:
+    thin: false
+    light: false
+    duotone: false
+    sharp_solid: false
+  home_banner:
+    enable: true
+    style: fixed
+    image:
+      light: /images/wallhaven-wqery6-light.webp
+      dark: /images/wallhaven-wqery6-dark.webp
+    title: MosEcho
+    subtitle:
+      text:
+        - AI 工程 · 网络安全
+        - 本科在读 · 论文研究
+      hitokoto:
+        enable: false
+        show_author: false
+        api: https://v1.hitokoto.cn
+      typing_speed: 100
+      backing_speed: 80
+      starting_delay: 500
+      backing_delay: 1500
+      loop: true
+      smart_backspace: true
+    text_color:
+      light: "#ffffff"
+      dark: "#ffffff"
+    text_style:
+      title_size: 2.8rem
+      subtitle_size: 1.5rem
+      line_height: 1.2
+    custom_font:
+      enable: false
+      family: null
+      url: null
+    social_links:
+      enable: true
+      style: default
+      links:
+        - icon: github
+          url: https://github.com/MosEcho
+      qrs: []
+  navbar:
+    auto_hide: false
+    color:
+      left: "#243c57"
+      right: "#365c86"
+      transparency: 70
+    width:
+      home: 1200px
+      pages: 1000px
+    links:
+      Home:
+        path: /
+        icon: fa-regular fa-house
+      归档:
+        path: /archives/
+        icon: fa-regular fa-archive
+      友链:
+        path: /link/
+        icon: fa-regular fa-link
+      关于:
+        path: /about/
+        icon: fa-regular fa-user
+    search:
+      enable: false
+      preload: true
+  home:
+    sidebar:
+      enable: true
+      position: left
+      first_item: info
+      announcement: 我收藏的技术文章
+      show_on_mobile: true
+      links:
+        AI 工程:
+          path: /categories/AI-工程/
+          icon: fa-regular fa-code
+        研究笔记:
+          path: /categories/研究笔记/
+          icon: fa-regular fa-book
+        安全实践:
+          path: /categories/安全实践/
+          icon: fa-regular fa-shield
+    article_date_format: YYYY-MM-DD
+    excerpt_length: 240
+    categories:
+      enable: true
+      limit: 3
+    tags:
+      enable: true
+      limit: 3
+  articles:
+    style:
+      font_size: 16px
+      line_height: 1.5
+      image_border_radius: 14px
+      image_alignment: center
+      image_caption: false
+      link_icon: true
+      delete_mask: false
+      title_alignment: left
+      headings_top_spacing:
+        h1: 3.2rem
+        h2: 2.4rem
+        h3: 1.9rem
+        h4: 1.6rem
+        h5: 1.4rem
+        h6: 1.3rem
+    word_count:
+      enable: false
+      count: true
+      min2read: true
+    author_label:
+      enable: false
+      auto: false
+      list: []
+    code_block:
+      copy: true
+      style: mac
+      highlight_theme:
+        light: github
+        dark: vs2015
+      font:
+        enable: false
+        family: null
+        url: null
+    toc:
+      enable: true
+      max_depth: 3
+      number: false
+      expand: true
+      init_open: true
+    copyright:
+      enable: false
+      default: cc_by_nc_sa
+    lazyload: true
+    pangu_js: false
+    recommendation:
+      enable: false
+      title: 推荐阅读
+      limit: 3
+      mobile_limit: 2
+      placeholder: /images/wallhaven-wqery6-light.webp
+      skip_dirs: []
+  comment:
+    enable: false
+    system: waline
+    config:
+      waline:
+        serverUrl: https://example.example.com
+        lang: zh-CN
+        emoji: []
+        recaptchaV3Key: null
+        turnstileKey: null
+        reaction: false
+      gitalk:
+        clientID: null
+        clientSecret: null
+        repo: null
+        owner: null
+        proxy: null
+      twikoo:
+        version: 1.6.10
+        server_url: null
+        region: null
+      giscus:
+        repo: null
+        repo_id: null
+        category: null
+        category_id: null
+        mapping: pathname
+        strict: 0
+        reactions_enabled: 1
+        emit_metadata: 0
+        lang: en
+        input_position: bottom
+        loading: lazy
+      artalk:
+        server: null
+        site: null
+      utterances:
+        repo: null
+        issue_term: pathname
+        issue_number: null
+        label: null
+        theme_light: github-light
+        theme_dark: github-dark
+  footer:
+    runtime: false
+    icon: ""
+    start: 2026/10/23 00:00:00
+    statistics: false
+    customize: 我的阅读收藏 · <a href="/about/">文章与图片来源</a>
+    icp:
+      enable: false
+      number: null
+      url: null
+  inject:
+    enable: true
+    head:
+      - <script defer data-swup-ignore-script
+        src="https://cloud.umami.is/script.js"
+        data-website-id="853c2626-b557-4eee-8060-40c048037936"
+        data-domains="mosecho.github.io"></script>
+      - <link rel="stylesheet" href="/assets/music-player.css?v=20261023-dock">
+      - <script type="module"
+        src="/assets/music-player.mjs?v=20261023-dock"></script>
+      - <link rel="stylesheet" href="/assets/site-stats.css?v=20261023">
+      - <script type="module" src="/assets/site-stats.mjs?v=20261023"></script>
+      - <script defer src="https://events.vercount.one/js"></script>
+    footer: []
+  plugins:
+    feed:
+      enable: false
+    aplayer:
+      enable: false
+      type: fixed
+      audios:
+        - name: null
+          artist: null
+          url: null
+          cover: null
+          lrc: null
+    mermaid:
+      enable: false
+      version: 11.4.1
+      theme:
+        light: default
+        dark: dark
+  page_templates:
+    friends_column: 2
+    tags_style: blur
+    masonry:
+      batch_size: 12
+      initial_batch_size: 24
+  cdn:
+    enable: false
+    provider: npmmirror
+    custom_url: null
+  developer:
+    enable: false

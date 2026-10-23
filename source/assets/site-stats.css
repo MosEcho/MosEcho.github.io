@@ -1,0 +1,21 @@
+.home-sidebar-container .me-site-stats { padding: 18px 15px; color: var(--second-text-color); }
+.me-site-stats h2 { display: flex; align-items: center; gap: 8px; margin: 0 0 16px; font-size: .95rem; font-weight: 600; }
+.me-site-stats h2 i { color: var(--primary-color); font-size: .9rem; }
+.me-site-stats__tags { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 12px; }
+.me-site-stats__tags a { color: var(--second-text-color); font-size: .85rem; line-height: 1.8; overflow-wrap: anywhere; transition: color .18s; }
+.me-site-stats__tags a:hover { color: var(--primary-color); }
+.me-site-stats__tags sup { margin-left: 2px; color: var(--fourth-text-color, var(--third-text-color)); font-size: .6rem; }
+.me-site-stats__months { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 18px; padding-top: 18px; border-top: 1px dashed var(--border-color); }
+.me-site-stats__months a { display: flex; flex-direction: column; gap: 5px; padding: 9px 10px; border: 1px solid var(--border-color); border-radius: 10px; background: var(--second-background-color); transition: border-color .18s; }
+.me-site-stats__months a:hover { border-color: var(--primary-color); }
+.me-site-stats__months a > span { color: var(--third-text-color); font-size: .7rem; white-space: nowrap; }
+.me-site-stats__months strong { color: var(--second-text-color); font-size: .95rem; font-weight: 600; }
+.me-site-stats small { margin-left: 4px; font-size: .7rem; font-weight: 400; color: var(--third-text-color); }
+.me-site-stats__totals { margin: 18px 0 0; padding-top: 13px; border-top: 1px dashed var(--border-color); }
+.me-site-stats__totals > div { display: flex; align-items: center; justify-content: space-between; gap: 6px; padding: 7px 0; font-size: .8rem; }
+.me-site-stats__totals dt { display: flex; align-items: center; gap: 8px; color: var(--third-text-color); }
+.me-site-stats__totals dt i { width: 15px; text-align: center; }
+.me-site-stats__totals dd { margin: 0; font-variant-numeric: tabular-nums; color: var(--second-text-color); }
+.me-site-stats__credit { margin: 11px 0 0; text-align: right; color: var(--fourth-text-color, var(--third-text-color)); font-size: .6rem; }
+.me-site-stats__credit a:hover { color: var(--primary-color); }
+@media (prefers-reduced-motion: reduce) { .me-site-stats a { transition: none; } }

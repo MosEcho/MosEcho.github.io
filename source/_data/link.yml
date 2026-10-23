@@ -1,0 +1,13 @@
+- class_name: 友链
+  class_desc: CTF、Web 安全与学习记录
+  link_list:
+    - &a1
+      name: Jatopos的博客
+      link: https://jatopos.github.io/
+      avatar: /assets/jatopos.svg
+      descr: CTF · Web 安全 · 学习记录
+      description: CTF · Web 安全 · 学习记录
+  links_category: 友链
+  has_thumbnail: false
+  list:
+    - *a1

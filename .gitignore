@@ -1,0 +1,7 @@
+node_modules
+themes/
+dist*/
+db*.json
+.music-cache/
+.DS_Store
+*.log

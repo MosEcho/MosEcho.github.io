@@ -1,0 +1,28 @@
+{
+  "name": "mosecho-theme-comparison",
+  "version": "1.0.0",
+  "private": true,
+  "hexo": {
+    "version": "8.1.2"
+  },
+  "scripts": {
+    "build:anzhiyu": "hexo clean --config _config.anzhiyu.yml && hexo generate --config _config.anzhiyu.yml",
+    "build:redefine": "node tools/build-redefine.mjs",
+    "test:music": "node --test tests/music.test.mjs"
+  },
+  "dependencies": {
+    "hexo": "8.1.2",
+    "hexo-cli": "4.3.2",
+    "hexo-generator-archive": "2.0.0",
+    "hexo-generator-category": "2.0.0",
+    "hexo-generator-index": "4.0.0",
+    "hexo-generator-tag": "2.0.0",
+    "hexo-renderer-ejs": "2.0.0",
+    "hexo-renderer-marked": "7.0.1",
+    "hexo-renderer-pug": "3.0.0",
+    "hexo-renderer-stylus": "3.0.1",
+    "hexo-theme-anzhiyu": "1.7.0",
+    "hexo-theme-redefine": "2.9.0",
+    "yaml": "2.8.1"
+  }
+}

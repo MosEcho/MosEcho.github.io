@@ -1,0 +1,721 @@
+title: MosEcho
+subtitle: AI 工程 · 网络安全 · 论文研究
+description: AI 工程师 · 本科在读，有 CTF 比赛和漏洞挖掘经验。
+mosecho_site_start: 2027-09-01T00:00:00+08:00
+author: MosEcho
+language: zh-CN
+timezone: Asia/Shanghai
+root: /
+permalink: read/:title/
+source_dir: source
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+relative_link: false
+future: false
+post_asset_folder: false
+render_drafts: false
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: ""
+prismjs:
+  enable: false
+index_generator:
+  path: ""
+  per_page: 8
+  order_by: -date
+per_page: 8
+pagination_dir: page
+external_link:
+  enable: true
+  field: site
+  exclude: []
+url: https://mosecho-private-blog.mysticreed12.chatgpt.site
+theme: anzhiyu-preview
+public_dir: dist-anzhiyu
+database: db-anzhiyu.json
+theme_config:
+  menu:
+    文章:
+      归档: /archives/ || anzhiyu-icon-box-archive
+      分类: /categories/ || anzhiyu-icon-shapes
+      标签: /tags/ || anzhiyu-icon-tags
+    友链: /link/ || anzhiyu-icon-link
+    关于: /about/ || anzhiyu-icon-paper-plane
+    3 · Redefine: https://mosecho.github.io/ || anzhiyu-icon-arrow-right
+  nav:
+    enable: false
+    travelling: false
+    clock: false
+    menu:
+      - title: 网页
+        item:
+          - name: 博客
+            link: https://hexo.anheyu.com/
+            icon: /img/favicon.ico
+      - title: 项目
+        item:
+          - name: 安知鱼图床
+            link: https://image.anheyu.com/
+            icon: https://image.anheyu.com/favicon.ico
+  mourn:
+    enable: false
+    days:
+      - 4-5
+      - 5-12
+      - 7-7
+      - 9-18
+      - 12-13
+  highlight_theme: light
+  highlight_copy: true
+  highlight_lang: true
+  highlight_shrink: false
+  highlight_height_limit: 330
+  code_word_wrap: false
+  copy:
+    enable: true
+    copyright:
+      enable: false
+      limit_count: 50
+  social:
+    Github: https://github.com/MosEcho || anzhiyu-icon-github
+  author_status:
+    enable: false
+    statusImg: https://bu.dusays.com/2023/08/24/64e6ce9c507bb.png
+    skills: null
+  algolia_search:
+    enable: false
+    hits:
+      per_page: 6
+    tags: null
+  docsearch:
+    enable: false
+    appId: null
+    apiKey: null
+    indexName: null
+    option: null
+  local_search:
+    enable: false
+    preload: true
+    CDN: null
+  mathjax:
+    enable: false
+    per_page: false
+  katex:
+    enable: false
+    per_page: false
+    hide_scrollbar: true
+  favicon: /assets/avatar.jpg
+  avatar:
+    img: /assets/avatar.jpg
+    effect: false
+  disable_top_img: false
+  index_img: false
+  default_top_img: false
+  cover:
+    index_enable: true
+    aside_enable: true
+    archives_enable: true
+    position: left
+    default_cover:
+      - /assets/mountains.jpg
+  error_img:
+    flink: /img/friend_404.gif
+    post_page: /img/404.jpg
+  error_404:
+    enable: true
+    subtitle: 请尝试站内搜索寻找文章
+    background: https://bu.dusays.com/2023/05/08/645907596997d.gif
+  post_meta:
+    page:
+      date_type: created
+      date_format: simple
+      categories: true
+      tags: true
+      label: false
+    post:
+      date_type: both
+      date_format: date
+      categories: true
+      tags: true
+      label: true
+      unread: false
+  mainTone:
+    enable: false
+    mode: api
+    api: https://img2color-go.vercel.app/api?img=
+    cover_change: true
+  wordcount:
+    enable: false
+    post_wordcount: true
+    min2read: true
+    total_wordcount: true
+  index_post_content:
+    method: 3
+    length: 500
+  anchor: false
+  toc:
+    post: true
+    page: false
+    number: true
+    expand: false
+    style_simple: false
+  post_copyright:
+    enable: false
+    decode: false
+    author_href: null
+    location: 长沙
+    license: CC BY-NC-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    avatarSinks: false
+    copyright_author_img_back: null
+    copyright_author_img_front: null
+    copyright_author_link: /
+  reward:
+    enable: false
+    QR_code:
+      - img: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png
+        link: null
+        text: 微信
+      - img: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png
+        link: null
+        text: 支付宝
+  post_edit:
+    enable: false
+    github: false
+    yuque: false
+  related_post:
+    enable: true
+    limit: 6
+    date_type: created
+  photofigcaption: false
+  post_pagination: 2
+  noticeOutdate:
+    enable: false
+    style: flat
+    limit_day: 365
+    position: top
+    message_prev: It has been
+    message_next: days since the last update, the content of the article may be outdated.
+  sharejs:
+    enable: false
+    sites: facebook,twitter,wechat,weibo,qq
+  addtoany:
+    enable: false
+    item: facebook,twitter,wechat,sina_weibo,email,copy_link
+  comments:
+    use: []
+    text: true
+    lazyload: false
+    count: false
+    card_post_count: false
+  valine:
+    appId: xxxxx
+    appKey: xxxxx
+    pageSize: 10
+    avatar: mp
+    lang: zh-CN
+    placeholder: 填写QQ邮箱就会使用QQ头像喔~.
+    guest_info: nick,mail,link
+    recordIP: false
+    serverURLs: null
+    bg: /img/comment_bg.png
+    emojiCDN: //i0.hdslb.com/bfs/emote/
+    enableQQ: true
+    requiredFields: nick,mail
+    visitor: false
+    master:
+      - xxxxx
+    friends:
+      - xxxxxx
+    tagMeta: 博主,小伙伴,访客
+    option: null
+  waline:
+    serverURL: null
+    bg: null
+    pageview: false
+    meta_css: false
+    imageUploader: true
+    option: null
+  twikoo:
+    envId: null
+    region: null
+    visitor: false
+    option: null
+  artalk:
+    server: null
+    site: null
+    visitor: false
+    option: null
+  giscus:
+    repo: null
+    repo_id: null
+    category_id: null
+    theme:
+      light: light
+      dark: dark
+    option:
+      data-lang: zh-CN
+      data-mapping: null
+      data-category: null
+      data-input-position: null
+  chat_btn: false
+  chat_hide_show: false
+  chatra:
+    enable: false
+    id: null
+  tidio:
+    enable: false
+    public_key: null
+  daovoice:
+    enable: false
+    app_id: null
+  crisp:
+    enable: false
+    website_id: null
+  footer:
+    owner:
+      enable: true
+      since: 2026
+    custom_text: 我的阅读收藏 · <a href="/about/">文章与图片来源</a>
+    runtime:
+      enable: false
+      launch_time: 04/01/2021 00:00:00
+      work_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg
+      work_description: 距离月入25k也就还差一个大佬带我~
+      offduty_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-下班啦.svg
+      offduty_description: 下班了就该开开心心的玩耍，嘿嘿~
+    bdageitem:
+      enable: false
+      list:
+        - link: https://hexo.io/
+          shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg
+          message: 博客框架为Hexo_v5.4.0
+        - link: https://hexo.anheyu.com/
+          shields: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.9/img/Theme-AnZhiYu-2E67D3.svg
+          message: 本站使用AnZhiYu主题
+    socialBar:
+      enable: false
+      centerImg: null
+      left: null
+      right: null
+    list:
+      enable: false
+      randomFriends: 3
+      project: null
+    footerBar:
+      enable: true
+      authorLink: /
+      cc:
+        enable: false
+        link: /copyright
+      linkList:
+        - link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
+          text: 主题
+      subTitle:
+        enable: false
+        effect: true
+        startDelay: 300
+        typeSpeed: 150
+        backSpeed: 50
+        loop: true
+        source: 1
+        sub: null
+  baidu_analytics: null
+  google_analytics: null
+  cnzz_analytics: null
+  cloudflare_analytics: null
+  microsoft_clarity: null
+  google_adsense:
+    enable: false
+    auto_ads: true
+    js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+    client: null
+    enable_page_level_ads: true
+  site_verification:
+    - name: google-site-verification
+      content: xxx
+    - name: baidu-site-verification
+      content: code-xxx
+    - name: msvalidate.01
+      content: xxx
+  theme_color:
+    enable: true
+    main: "#365c86"
+    dark_main: "#8cb9e6"
+    paginator: "#365c86"
+    text_selection: "#2128bd"
+    link_color: var(--anzhiyu-fontcolor)
+    meta_color: var(--anzhiyu-fontcolor)
+    hr_color: "#4259ef23"
+    code_foreground: "#fff"
+    code_background: var(--anzhiyu-code-stress)
+    toc_color: "#365c86"
+    scrollbar_color: var(--anzhiyu-scrollbar)
+    meta_theme_color_light: "#f7f9fe"
+    meta_theme_color_dark: "#18171d"
+  sidebar:
+    site_data:
+      archive: true
+      tag: true
+      category: true
+    menus_items: true
+    tags_cloud: true
+    display_mode: true
+    nav_menu_project: true
+  h2Divider: false
+  table_interlaced_discoloration: false
+  article_double_row: true
+  index_site_info_top: null
+  index_top_img_height: null
+  category_ui: null
+  tag_ui: null
+  footer_bg: false
+  rightside-bottom: 100px
+  canvas_ribbon:
+    enable: false
+    size: 150
+    alpha: 0.6
+    zIndex: -1
+    click_to_change: false
+    mobile: false
+  canvas_fluttering_ribbon:
+    enable: false
+    mobile: false
+  canvas_nest:
+    enable: false
+    color: 0,0,255
+    opacity: 0.7
+    zIndex: -1
+    count: 99
+    mobile: false
+  activate_power_mode:
+    enable: false
+    colorful: true
+    shake: false
+    mobile: false
+  fireworks:
+    enable: false
+    zIndex: 9999
+    mobile: false
+  click_heart:
+    enable: false
+    mobile: false
+  ClickShowText:
+    enable: false
+    text: null
+    fontSize: 15px
+    random: false
+    mobile: false
+  display_mode: light
+  beautify:
+    enable: true
+    field: post
+    title-prefix-icon: \f0c1
+    title-prefix-icon-color: "#F47466"
+  font:
+    global-font-size: 16px
+    code-font-size: null
+    font-family: null
+    code-font-family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei",
+      "Microsoft YaHei", sans-serif
+  blog_title_font:
+    font_link: null
+    font-family: PingFang SC, 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft
+      YaHei', sans-serif
+  hr_icon:
+    enable: true
+    icon: \f0c4
+    icon-top: null
+  subtitle:
+    enable: false
+    effect: true
+    startDelay: 300
+    typeSpeed: 150
+    backSpeed: 50
+    loop: true
+    source: 1
+    sub: null
+  preloader:
+    enable: false
+    source: 3
+    pace_css_url: null
+    avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg
+  aside:
+    enable: true
+    hide: false
+    button: true
+    mobile: true
+    position: right
+    display:
+      archive: true
+      tag: true
+      category: true
+    card_author:
+      enable: true
+      description: AI 工程师 · 本科在读<br>研究、CTF 与漏洞挖掘
+      name_link: /
+    card_announcement:
+      enable: true
+      content: 这里是我收藏的技术文章，点击标题阅读原文。
+    card_weixin:
+      enable: false
+      face: https://bu.dusays.com/2023/01/13/63c02edf44033.png
+      backFace: https://bu.dusays.com/2023/05/13/645fa415e8694.png
+    card_recent_post:
+      enable: true
+      limit: 5
+      sort: date
+      sort_order: null
+    card_categories:
+      enable: true
+      limit: 8
+      expand: none
+      sort_order: null
+    card_tags:
+      enable: true
+      limit: 40
+      color: false
+      sort_order: null
+      highlightTags: null
+    card_archives:
+      enable: true
+      type: monthly
+      format: MMMM YYYY
+      order: -1
+      limit: 8
+      sort_order: null
+    card_webinfo:
+      enable: false
+      post_count: true
+      last_push_date: false
+      sort_order: null
+  busuanzi:
+    site_uv: false
+    site_pv: false
+    page_pv: false
+  runtimeshow:
+    enable: true
+    publish_date: 4/1/2021 00:00:00
+  newest_comments:
+    enable: true
+    sort_order: null
+    limit: 6
+    storage: 10
+    avatar: true
+  translate:
+    enable: true
+    default: 繁
+    rightMenuMsgDefault: 轉為繁體
+    defaultEncoding: 2
+    translateDelay: 0
+    msgToTraditionalChinese: 繁
+    msgToSimplifiedChinese: 简
+    rightMenuMsgToTraditionalChinese: 转为繁体
+    rightMenuMsgToSimplifiedChinese: 转为简体
+  readmode: true
+  centerConsole:
+    enable: true
+    card_tags:
+      enable: true
+      limit: 40
+      color: false
+      sort_order: null
+      highlightTags: null
+    card_archives:
+      enable: true
+      type: monthly
+      format: MMMM YYYY
+      order: -1
+      limit: 8
+      sort_order: null
+  darkmode:
+    enable: true
+    button: true
+    autoChangeMode: 1
+    start: null
+    end: null
+  rightside_item_order:
+    enable: false
+    hide: null
+    show: null
+  medium_zoom: false
+  fancybox: true
+  mermaid:
+    enable: false
+    theme:
+      light: default
+      dark: dark
+  note:
+    style: flat
+    icons: true
+    border_radius: 3
+    light_bg_offset: 0
+  icons:
+    ali_iconfont_js: null
+    fontawesome: false
+    fontawesome_animation_css: null
+  pjax:
+    enable: false
+    exclude: null
+  aplayerInject:
+    enable: true
+    per_page: true
+  snackbar:
+    enable: true
+    position: top-center
+    bg_light: "#425AEF"
+    bg_dark: "#1f1f1f"
+  instantpage: true
+  pangu:
+    enable: false
+    field: site
+  lazyload:
+    enable: true
+    field: site
+    placeholder: null
+    blur: true
+    progressive: true
+  pwa:
+    enable: false
+    startup_image_enable: true
+    manifest: /manifest.json
+    theme_color: var(--anzhiyu-main)
+    mask_icon: /img/siteicon/apple-icon-180.png
+    apple_touch_icon: /img/siteicon/apple-icon-180.png
+    bookmark_icon: /img/siteicon/apple-icon-180.png
+    favicon_32_32: /img/siteicon/32.png
+    favicon_16_16: /img/siteicon/16.png
+  Open_Graph_meta: true
+  css_prefix: true
+  home_top:
+    enable: true
+    timemode: date
+    title: AI 工程
+    subTitle: 网络安全与研究。
+    siteText: MosEcho
+    category:
+      - name: AI 工程
+        path: /categories/AI-工程/
+        shadow: var(--anzhiyu-shadow-blue)
+        class: blue
+        icon: anzhiyu-icon-code
+      - name: 研究笔记
+        path: /categories/研究笔记/
+        shadow: var(--anzhiyu-shadow-blue)
+        class: blue
+        icon: anzhiyu-icon-book
+      - name: 安全实践
+        path: /categories/安全实践/
+        shadow: var(--anzhiyu-shadow-green)
+        class: green
+        icon: anzhiyu-icon-shield
+    default_descr: 原文选读
+    swiper:
+      enable: false
+      swiper_css: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css
+      swiper_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.js
+    banner:
+      tips: 安全与 AI
+      title: Why gdb-mcp?
+      image: /assets/night.jpg
+      link: https://blog.beacox.space/posts/gdb-mcp/
+  friends_vue:
+    enable: false
+    vue_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.1.1/friends/index.4f887d95.js
+    apiurl: null
+    top_tips: 使用 友链朋友圈 订阅友链最新文章
+    top_background: null
+  universe:
+    enable: false
+  bubble:
+    enable: false
+  console:
+    enable: true
+  LA:
+    enable: false
+    ck: null
+    LingQueMonitorID: null
+  diytitle:
+    enable: false
+    leaveTitle: w(ﾟДﾟ)w 不要走！再看看嘛！
+    backTitle: ♪(^∇^*)欢迎肥来！
+  comment_barrage_config:
+    enable: false
+    maxBarrage: 1
+    barrageTime: 4000
+    accessToken: ""
+    mailMd5: ""
+  nav_music:
+    enable: false
+    console_widescreen_music: false
+    id: 8152976493
+    server: netease
+    volume: 0.7
+    all_playlist: https://y.qq.com/n/ryqq/playlist/8802438608
+  music_page_default: nav_music
+  visitorMail:
+    enable: true
+    mail: ""
+  ptool:
+    enable: true
+    share_mobile: true
+    share_weibo: true
+    share_copyurl: true
+    categories: false
+    mode: null
+  greetingBox:
+    enable: false
+    default: 晚上好👋
+    list: null
+  post_head_ai_description:
+    enable: false
+    gptName: AnZhiYu
+    mode: local
+    switchBtn: false
+    btnLink: https://afdian.net/item/886a79d4db6711eda42a52540025c377
+    randomNum: 3
+    basicWordCount: 1000
+    key: xxxx
+    Referer: https://xx.xx/
+  shortcutKey:
+    enable: false
+    delay: 100
+    shiftDelay: 200
+  accesskey:
+    enable: true
+  linkPageTop:
+    enable: false
+    title: 与数百名博主无限进步
+    addFriendPlaceholder: |
+      昵称（请勿包含博客等字样）：
+      网站地址（要求博客地址，请勿提交个人主页）：
+      头像图片url（请提供尽可能清晰的图片，我会上传到我自己的图床）：
+      描述：
+      站点截图（可选）：
+  pageThumbnailSuffix: ""
+  agreementPopup:
+    enable: false
+    url: /privacy
+  rightClickMenu:
+    enable: false
+  peoplecanvas:
+    enable: true
+    img: https://upload-bbs.miyoushe.com/upload/2024/07/27/125766904/ba62475f396df9de3316a08ed9e65d86_5680958632268053399..png
+  dynamicEffect:
+    postTopWave: true
+    postTopRollZoomInfo: false
+    pageCommentsRollZoom: false
+  inject:
+    head: null
+    bottom: null
+  CDN:
+    internal_provider: local
+    third_party_provider: jsdelivr
+    version: true
+    custom_format: null
+    option: null
